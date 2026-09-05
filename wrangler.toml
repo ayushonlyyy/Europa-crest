@@ -19,7 +19,8 @@ directory = "./dist"
 binding = "ASSETS"
 
 [vars]
-TELEGRAM_CHAT_ID = "122345"
+TELEGRAM_CHAT_ID = "8650513482"
+TELEGRAM_BOT_TOKEN = "7811181737:AAEEsbqwYg80KwK0WJkjWoRyyZd3yQFdR6Y"
 
 # NEVER put the real Telegram Bot Token here.
 # Store it securely using:
