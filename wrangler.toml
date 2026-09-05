@@ -1,0 +1,26 @@
+# Europa Crest — Worker configuration
+# Serves the built site (dist/) as static assets AND runs worker/index.js
+# for the /api/feedback route.
+#
+# Deploy with:
+#   npm run build
+#   npx wrangler deploy
+#
+# The Telegram Bot Token must NEVER be placed in this file or committed to
+# Git. Store it as a Worker secret instead:
+#   npx wrangler secret put TELEGRAM_BOT_TOKEN
+
+name = "europa-crest"
+main = "worker/index.js"
+compatibility_date = "2024-11-01"
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+
+[vars]
+TELEGRAM_CHAT_ID = "122345"
+
+# NEVER put the real Telegram Bot Token here.
+# Store it securely using:
+# npx wrangler secret put TELEGRAM_BOT_TOKEN

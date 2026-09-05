@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+.wrangler/
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local
+.dev.vars
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local logo assets are fine to keep tracked;
+# but never commit real Telegram tokens or secrets in any file.
